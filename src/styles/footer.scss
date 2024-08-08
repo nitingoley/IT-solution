@@ -1,0 +1,46 @@
+// main.scss
+@import 'colors';
+
+footer{
+    background-color: gray;
+    height: 200px;
+    width: 100%;
+    color: $dark;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 2rem;
+
+    >div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        >h1{
+            font: 600 2rem $text1;
+            color: $third;
+        }
+        >p{
+            font: 500 1.2rem $text1;
+
+        }
+        >h4{
+    
+            font: 500 2rem $text1;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        >div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                padding: 10px;
+                font-size: small;
+                color: $dark;
+                font: 500 2rem $text2;
+                &:hover{
+                    color: $third;
+                }
+            }
+        }
+    }
+}
